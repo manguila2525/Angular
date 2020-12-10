@@ -1,0 +1,12 @@
+<div class="grid grid-cols-4 gap-4">
+    <div class="bg-blue-300 "*ngFor="let ar of article">
+    <div class="bg-blue-500 text-center py-3 grid grid-cols-4 pr-5">
+      <h1 class="text-xl4 col-span-3">{{ar.title}}</h1>
+      <button (click)="deleteNote(ar)" class="border px-3 text-white bg-red-500">Delete</button>
+    </div>
+    <p class="px-5 my-4">{{ar.description}} </p>
+    <div class="pt-3 pb-5 px-3 grid">
+      <button class="border border-r-10 bg-blue-400 px-3 py-2" (click)="message(ar.message)">Show more</button>
+    </div>
+  </div>
+</div>

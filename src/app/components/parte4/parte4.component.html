@@ -1,0 +1,12 @@
+<button [disabled]="desactivado">Titulo</button>
+<button (click)="changeState()" >Change state</button>
+
+<input type="text" [(ngModel)]="titulo">
+<p>{{titulo}} </p>
+
+<button (click)="addArticle()" >Add Article</button>
+<ul>
+  <li *ngFor="let article of articles">
+    {{article.nombre}}
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<p>header works!</p>
+<h1>{{name}} </h1>
+<h2>{{count}} </h2>
+<ul>
+  <li *ngFor="let p of persons">
+    {{p}}
+  </li>
+</ul>
+
+<button (click)="changeName()" >Click</button>
+<button (click)="sumar()">+</button>
+<button (click)="restar()">-</button>
+<button (click)="addPerson()">Add</button>
